@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paypal_Index</title>
+    <link rel="icon" href="icon.png">
+    <style>
+        body{
+            margin: 0;
+        }
+        #header{
+            height: 35px;
+            width: 100%;
+            /* background-size: cover; */
+            background-color: #fff;
+        }
+        #content{
+            height: 300px;
+            width: 100%;
+            /* background-size: cover; */
+            background-color: #0097E0;
+        }
+        #connect{
+            height: 370px;
+            width: 100%;
+            /* background-color: #02387b; */
+            background-color: #0097E0;
+            /* background-size: cover; */
+            background-image: url(ss.png);
+            background-size: cover;
+        }
+
+
+        #shopping{
+            height: 440px;
+            width: 100%;
+            background-color: #f5f7fa;
+        }
+        
+    #shoppingLeft{
+            height: 445px;
+            width: 35%;
+            margin-left: 15% ;
+            float: left;
+            /* background-color: #3c6bb1; */
+            color: #00A8EA;
+            font-size: 2.3rem;
+            line-height: 3rem;
+            font-weight: 400;
+            margin-top: 0px;
+        }
+
+        .first{
+            color: black;
+            padding-top: 20px;
+            line-height: 1.6;
+            font-size: 0.9rem;
+            margin-top: -47px;
+            
+        }
+        .hbutton3{
+            margin-top: -30%;
+            padding: 10px;
+            padding-left: 111px;
+            padding-right: 115px;
+            max-width: 320px;
+            border-radius: 25px;
+            background-color: transparent;
+            color: #0070ba;
+            border:1px solid;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #shoppingRight{
+            height: 445px;
+            width: 28%;
+            float: left;
+            margin-left: 47px;
+            /* background-color: #3581f489; */
+        }
+        #pay{
+            height: 445px;
+            width: 97%;
+            background-color: #ffffff;
+            
+        }
+        #payLeft{
+            height: 445px;
+            width: 25%;
+            margin-left: 15%;
+            float: left;
+            margin-bottom: 4px;
+            /* background-color: #3c6bb19b; */
+        }
+        #payRight{
+            /* height: 445px;
+            width: 35%;
+            float: left;
+            background-color: #3581f45a; */
+            height: 445px;
+            width: 35%;
+            margin-left: 15% ;
+            float: left;
+            /* background-color: #3c6bb1; */
+            color: #00A8EA;
+            font-size: 2.3rem;
+            line-height: 3rem;
+            font-weight: 400;
+            margin-top: 4px;
+        }
+        .second{
+            color: black;
+            padding-top: 20px;
+            line-height: 1.6;
+            font-size: 0.9rem;
+            margin-top: -47px;
+        }
+        .hbutton4{
+            margin-top: -30%;
+            padding: 10px;
+            padding-left: 45px;
+            padding-right: 53px;
+            max-width: 320px;
+            border-radius: 25px;
+            background-color: transparent;
+            color: #0070ba;
+            border:1px solid;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #shop{
+            height: 445px;
+            width: 100%;
+            background-color: #f5f7fa;
+        }
+        #shopLeft{
+            height: 445px;
+            width: 35%;
+            margin-left: 15% ;
+            float: left;
+            /* background-color: #3c6bb1; */
+            color: #00A8EA;
+            font-size: 2.3rem;
+            line-height: 3rem;
+            font-weight: 400;
+            margin-top: 0px;
+        }
+        #shopRight{
+            height: 445px;
+            width: 28%;
+            float: left;
+            margin-left: 47px;
+            /* background-color: #3581f489; */
+        }
+       
+        #checkout{
+            height: 230px;
+            width: 100%;
+            background-color: #fff;
+            color:#00A8EA ;
+            font-size: 2.6rem;
+            line-height: 3rem;
+            font-weight: 400;
+            text-align: center;
+
+        }
+        .third{
+            width: 8%;
+            display: flex;
+            margin-left: 35%;
+        }
+       
+        #community{
+            height: 380px;
+            width: 100%;
+            /* background-color: #00A8EA; */
+            background-color: #0097E0;
+        }
+        #footer{
+            height: 400px;
+            width: 100%;
+            background-color: #fff;
+        }  
+        .footer1{
+            font-weight: 400;
+            line-height: 1.6rem;
+            margin-left: 180px;
+            margin-top: 45px ;
+        }
+        .footer2{
+            margin-left: 140px;
+            margin-top: 45px ;
+            color: #2c2e2f;
+            font-size: 14px;
+            font-weight: 700;
+            background-color: transparent;
+            margin-top: 9%;
+        }
+        .footer3{
+            color: #687173;
+            margin-left: 140px;
+            line-height: 1.6;
+            font-size: .875rem;;
+            font-weight: 700;
+        }
+
+        /* Header */
+        #header1{
+            height: 75px;
+            width: 27%;
+            background-color: #ffffff;
+            float: left;
+        }
+        #header2{
+            height: 75px;
+            width: 4%;
+            background-color: #ffffff;
+            float: left;
+            
+        }
+        #header3{
+            height: 75px;
+            width: 7%;
+            background-color: #ffffff;
+            float: left;
+            padding-left: 30px;
+        }
+        #header4{
+            height: 75px;
+            width: 7%;
+            background-color: #ffffff;
+            float: left;
+            padding-left: 30px;
+        }
+        #header5{
+            height: 75px;
+            width: 7%;
+            background-color: #ffffff;
+            float: left;
+            padding-left: 30px;
+        }
+       
+        #header6{
+            height: 75px;
+            width: 7%;
+            background-color: #ffffff;
+            float: left;
+            padding-left: 30px;
+        }
+        #header7{
+            height: 75px;
+            width: 24%;
+            background-color: #ffffff;
+            float: left;
+            padding-left: 100px;
+        }
+        #contentText{
+            height: 172px;
+            width: 100%;
+            background-color: #0097E0;
+            
+        }
+        #contentButton{
+            height: 100px;
+            width: 100%;
+            background-color: #0097E0;
+        }
+        #counter{
+            height: 100px;
+            width: 55%;
+            margin-left: 25%;
+            /* background-color: #40c2aa8f; */
+            /* background-color: #00A8EA; */
+            background-color: #0097E0;
+        }
+        
+       
+        /*-------------------------Day2----------------------*/
+        *{
+            font-family: PayPalSansSmall-Regular,Helvetica Neue,Arial,sans-serif;
+            /* font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif; */
+        }
+        #logo{
+            height: 50px;
+            width: 150px;
+            margin-left: 120px;
+            margin-top: 2%;
+            cursor: pointer;
+        }
+
+
+        .headertext{
+            margin-top: 26%;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+
+        .hbutton1{
+            margin-top: 4%;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            max-width: 320px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            color: #0070ba;
+            border:1px solid;
+            cursor: pointer;
+        }
+        .hbutton2{
+            margin-top: 4%;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            max-width: 320px;
+            border-radius: 25px;
+            background-color: #0070ba;
+            color: white;
+            border:1px solid;
+            cursor: pointer;
+        }
+        .hbutton2:hover{
+            background-color: #015994;
+        }
+        .DoccontentText{
+            color: white;
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 4%;
+        }
+        .DoccontentText1{
+            color: white;
+            font-size: 2.1rem;
+            text-align: center;
+            padding: 4%;
+        }
+        .freeSignUp{
+            max-width: 320px;
+            cursor: pointer;
+            border-radius: 25px;
+            padding: 16px 24px;
+            padding-left: 90px;
+            padding-right: 90px;
+            border:transparent;
+            margin-left: 39%;
+            background-color:white;
+            color: #015994; 
+            font-weight: 700;
+            
+            font-size: 14px;
+        }
+        .freeSignUp1{
+            max-width: 320px;
+            cursor: pointer;
+            border-radius: 25px;
+            padding: 16px 24px;
+            padding-left: 110px;
+            padding-right: 110px;
+            border:transparent;
+            margin-left: 39%;
+            background-color:white;
+            color: #015994; 
+            font-weight: 700;
+            
+            font-size: 14px;
+        }
+
+
+        #payPalBusiness{
+            height: 110px;
+            width: auto;
+            background-color: #02387b;
+            margin-top: -107px;
+            color: white;
+            padding: 10px;
+            font-size: 22px;
+            font-family: PayPalSansBig-Light,Helvetica Neue,Arial,sans-serif;
+            font-weight: 400;
+        }
+        .businessButton{
+            max-width: 320px;
+            cursor: pointer;
+            border-radius: 25px;
+            padding: 16px 24px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            border:transparent;
+            background-color:white;
+            margin-top: 1%;
+            color: #015994;
+            font-weight: 750;
+            font-size: 12px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: auto;
+            display: block;
+        }
+
+        #write{
+            margin-top: 15%;
+        }
+        #write1{
+            margin-top: 5%;
+        }
+       .line{
+        width: 73%;
+       }
+       #flag{
+        /* width: 50px;
+        margin-left: 79%;
+        float: left;
+        margin-top: 1px;
+        margin-bottom: 1px; */
+        width: 30px;
+        margin-left: 84%;
+        float: left;
+        margin-top: 100px;
+        margin-bottom: -75px;
+        cursor: pointer;
+       }
+       .footer4{
+        font-size: 0.8125rem;
+        color: #687173;
+        line-height: 1.6;
+        margin-left: 180px;
+       }
+       .footer5{
+        font-size: 0.8125rem;
+        color: #687173;
+        line-height: 1.6;
+        margin-left: 180px;
+       }
+       .foot-panel4 {
+            background-color: #0f1111;
+            color: white;
+            height: 80px;
+            font-size: 0.7rem;
+            text-align: center;
+        }
+        .pages {
+            padding-top: 25px;
+        }
+        .copyright {
+            padding-top: 5px;
+        }
+
+          /* HOVER ALL */
+          .headertext:hover{
+            color: #214ddd;
+            cursor: pointer;
+
+        }
+        .hbutton2:hover{
+            background-color: #015994;
+            cursor: pointer;
+
+        }
+        .hbutton4:hover{
+            color: white;
+            background-color: #015994;
+            cursor: pointer;
+
+        }
+        .freeSignUp1:hover{
+            color: #7fb9fc;
+            cursor: pointer;
+            
+
+        }
+        .freeSignUp:hover{
+            color: #7fb9fc;
+            cursor: pointer;
+        }
+        .hbutton1:hover{
+            cursor: pointer;
+        }
+
+        .a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+
+    <div id="header">
+        <div id="header1"><img src="paypal.png" id="logo"></div>
+        <div id="header2"></div>
+        <div id="header3"> <p class="headertext">INDIVIDUAL</p> </div>
+        <div id="header4"><p class="headertext">BUSINESS</p></div>
+        <div id="header5"><p class="headertext">PARTNERS</p></div>
+        <div id="header6"><p class="headertext">USEFUL INFO</p></div>
+        <div id="header7">
+            <button class="hbutton1">Log In</button>
+            &nbsp;
+            <button class="hbutton2">Sign Up</button>
+        </div>
+    </div>
+
+
+
+
+    <div id="content">
+        <div id="contentText">
+            <p class="DoccontentText">
+                Take care of you and yours at home, and <br>
+                we can take care of you online.
+            </p>
+        </div>
+        <div id="contentButton">
+            <button class="freeSignUp">Sign Up For Free</button>
+        </div>
+    </div>
+
+
+
+
+    <div id="connect">
+        <img src="paypal1.jpg" >
+    </div>
+    <div id="payPalBusiness">
+        <p align="center">
+            Looking for PayPal Business Solutions? Whether you are freelancer or a business, we are here to support you.
+            <br>
+            <button class="businessButton">PayPal for Business</button>
+        </p>
+    </div>
+    
+ <div id="shopping">
+    <div id="shoppingLeft">
+        <div id="write">
+            <p>The world is your shopping <br>mall</p>
+            <p class="first">From big brands to little boutiques, you can shop safely at millions of<br> online stores with PayPal.
+            </p>
+            <p><button class="hbutton3">Shop Now</button></p>
+        </div>  
+    </div>
+    
+    <div id="shoppingRight"><img src="paypal22.jpg" alt=""></div>
+    </div>
+
+    <div id="pay">
+        <div id="payLeft"><img src="paypal33.png" alt="_blank"></div>
+        
+        <div id="payRight">
+            <div id="write">
+                <p>Pay it the way you want</p>
+            <p class="second">Link all your credit and debit cards and choose which one to use at <br>checkout. Shopping online has never been this easy.
+            </p>
+            <p><button class="hbutton4">Linked your preferred card</button></p>
+            </div>
+            
+        </div>
+    </div>
+    <div id="shop">
+        <div id="shopLeft">
+            <div id="write">
+                <p>Shop online with confidence</p>
+                <p class="first">Stay more secure when shopping online – with 24/7 fraud monitoring, <br>
+                    Buyer Protection* on us. Terms apply.
+                </p>
+                <p><button class="hbutton3">Find Out More</button></p>
+            </div>
+        </div>
+        <div id="shopRight"><img src="paypal44.jpg" alt="_blank"></div></div>
+    <div id="checkout">
+        <div id="write1">
+        <p>Checkout at millions of brands you love</p>
+        <p class="third">
+            <img src="pic1.png" alt="_blank">
+            &nbsp;&nbsp;
+            <img src="pic2.png" alt="_blank">
+            &nbsp;&nbsp;
+            <img src="pic3.png" alt="_blank">
+        </p>
+    </div>
+    </div>
+    <div id="community">
+        <div id="contentText">
+            <p class="DoccontentText1">
+            Join the global community of PayPal users who are shopping <br>and receiving payments securely every day.
+            </p>
+        </div>
+        <div id="contentButton">
+            <button class="freeSignUp1">Sign Up Now</button>
+        </div>
+        <div id="counter">
+            <img src="counter.png" alt="_blank">
+        </div>
+    </div>
+    <div id="footer">
+        <p class="footer1">Terms & Conditions: <br> 
+            * Buyer Protection is available on eligible purchases only. 180 day time limit and other terms apply. <br>
+            ** Subject to issuer’s reward programme terms and conditions.</p>
+
+    <div id="flag">
+        <img src="flag.jpg" alt="_blank">
+    </div>
+
+        <ul>
+        <p class="footer2">
+            <a class="a">Help</a> &nbsp;&nbsp;&nbsp; 
+            <a class="a">Contact</a> &nbsp;&nbsp;&nbsp; 
+            <a class="a">Fees</a> &nbsp;&nbsp;&nbsp; 
+            <a class="a">Security</a> &nbsp;&nbsp;&nbsp; 
+            <a class="a">Shop</a>
+        </p>
+        </ul>
+        <hr class="line">
+        <ul>
+            <p class="footer3">
+                <a class="a">About</a>&nbsp;&nbsp;&nbsp; 
+                <a class="a">Newsroom</a>&nbsp;&nbsp;&nbsp;
+                <a class="a">Jobs</a>&nbsp;&nbsp;&nbsp;
+                <a class="a">Developer</a>&nbsp;&nbsp;&nbsp;
+                <a class="a">Partners</a>&nbsp;&nbsp;&nbsp;
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <a>© 1999–2023</a>&nbsp;&nbsp;&nbsp;
+                <a class="a">Accessibility</a>&nbsp;&nbsp;
+                <a class="a">Cookies</a>&nbsp;&nbsp;
+                <a class="a">Privacy</a>&nbsp;&nbsp;
+                <a class="a">CSR</a>&nbsp;&nbsp;
+                <a class="a">Annual Returns</a>&nbsp;&nbsp;
+                <a class="a">Legal</a>
+            </p>
+        </ul>
+        <p class="footer4">
+            PayPal Services in India are provided by PayPal Payments Private Limited (CIN U74990MH2009PTC194653). Users are advised to read the <font class="a" color="#0070ba">terms and conditions</font> carefully.
+        </p>
+
+        <p class="footer5">
+            When you visit or interact with our sites, services, applications, tools or messaging, we or our authorised service providers may use cookies, web beacons, and other <br> similar technologies for storing information to help provide you with a better, faster and safer experience and for advertising purposes. Learn more
+            <font class="a" color="#0070ba">here.</font> 
+        </p>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of Uses</a>
+                <a>Privacy Notices</a>
+                <a>Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                © 1999-2023, Paypal.com, Inc. or its affiliates
+            </div>
+        </div>
+    </div>
+
+
+
+
+   
+</body>
+</html>
